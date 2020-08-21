@@ -3,10 +3,12 @@ var countSec = 0;
 var countMin = 0;
 var countHour = 0;
 var calculateInterval;
+var seconds = document.getElementById('second');
+var minutes = document.getElementById('minute');
+var hours = document.getElementById('hour');
+
 function buttonStart() {
-    var seconds = document.getElementById('second');
-    var minutes = document.getElementById('minute');
-    var hours = document.getElementById('hour');
+    
     calculateInterval = setInterval(function(){
         count++;
         countSec++;
@@ -25,4 +27,22 @@ function buttonStart() {
         }
         
     }, 10)
+}
+
+function buttonStop(){
+    clearInterval(calculateInterval);
+    count = 0, countSec = 0 , countMin = 0, countHour = 0;
+    resettingValues();
+    
+}
+
+function buttonPause() {
+    clearInterval(calculateInterval);
+}
+
+
+function resettingValues() {
+    seconds.innerHTML = '00';
+    minutes.innerHTML = '00';
+    hours.innerHTML = '00';
 }
