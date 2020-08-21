@@ -1,0 +1,29 @@
+#stopwatch{
+    max-width: 450px;
+    height: 500px;
+    border-radius: 16px;
+    margin: 0 auto;
+    
+}
+
+.header{
+    font-size: 42px;
+    color: rgb(167, 167, 165);
+    text-decoration: underline;
+}
+
+.timer{
+    font-size: 72px;
+    font-weight: 400;
+    margin: 35px 20px;
+}
+
+button{
+    width: 90px;
+    height: 90px;
+}
+
+.start{
+    width: 130px;
+    height: 130px;
+}
