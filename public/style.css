@@ -1,29 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play&family=Yanone+Kaffeesatz&display=swap');
+
 #stopwatch{
-    max-width: 450px;
-    height: 500px;
+    max-width: 400px;
+    height: 600px;
     border-radius: 16px;
-    margin: 0 auto;
+    margin: 90px auto;
+    box-shadow: 4px 14px 14px lightgrey;
     
 }
 
 .header{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 42px;
-    color: rgb(167, 167, 165);
-    text-decoration: underline;
+    color: rgb(245, 245, 245);
 }
 
 .timer{
     font-size: 72px;
     font-weight: 400;
     margin: 35px 20px;
+    font-family: 'Play', sans-serif;
+    
 }
 
-button{
+
+
+.pause{
     width: 90px;
     height: 90px;
+    color: orange;
+    background-color: white;
+    border: 2px solid orange;
+}
+
+.pause:hover{
+    background-color: orange;
+    color: #fff;
+}
+
+.reset{
+    width: 90px;
+    height: 90px;
+    color: red;
+    background-color: white;
+    border: 2px solid red;
+}
+
+.reset:hover{
+    background-color: red;
+    color: #fff;
 }
 
 .start{
     width: 130px;
     height: 130px;
+    color: green;
+    background-color: white;
+    border: 2px solid green;
+}
+
+.start:hover{
+    background-color: green;
+    color: #fff;
 }

@@ -5,24 +5,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>StopWatch App</title>
-  <link rel="stylesheet" href="style.css">
+  
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
+  <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
   <div id="stopwatch" class="text-center bg-dark text-white">
     <div>
-      <h1 class="header pt-4 pb-5">StopWatch</h1>
+      <h1 class="header pt-4 pb-5 animate__shakeX">StopWatch</h1>
     </div>
     <div>
       <h1 class="timer pb-5"><span id="hour">00</span>:<span id="minute">00</span>:<span id="second">00</span></h1>
     </div>
     <div class="pb-3">
-      <button class="btn btn-lg btn-danger rounded-circle mx-2 font-weight-bold" onclick="buttonStop()">Reset</button>
-      <button class="btn btn-lg btn-success rounded-circle mx-2 font-weight-bold start" onclick="buttonStart()">Start</button>
-      <button class="btn btn-lg btn-warning rounded-circle mx-2 font-weight-bold text-white" onclick="buttonPause()">Pause</button>
+      <button class="btn btn-lg rounded-circle mx-2 font-weight-bold reset animate__heartBeat" onclick="buttonStop()">Reset</button>
+      <button class="btn btn-lg rounded-circle mx-2 font-weight-bold start animate__heartBeat" onclick="buttonStart()">Start</button>
+      <button class="btn btn-lg rounded-circle mx-2 font-weight-bold pause animate__heartBeat"  onclick="buttonPause()">Pause</button>
     </div>
   </div>
 
