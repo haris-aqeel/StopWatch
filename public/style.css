@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Play&family=Yanone+Kaffeesatz&display=swap');
 
 #stopwatch{
-    max-width: 400px;
+    width: 350px;
     height: 600px;
     border-radius: 16px;
     margin: 90px auto;
@@ -64,3 +64,4 @@
     background-color: green;
     color: #fff;
 }
+
