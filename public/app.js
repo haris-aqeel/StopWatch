@@ -11,6 +11,11 @@ var hours = document.getElementById('hour');
 function buttonStart() {
     
     buttonActive = false;
+    if (buttonActive == false){
+        document.getElementById('START').setAttribute('disabled', 'disabled');
+    }else{
+        document.getElementById('START').removeAttribute('disabled', 'disabled');
+    }
     calculateInterval = setInterval(function(){
         count++;
         countSec++;
@@ -33,6 +38,7 @@ function buttonStart() {
 
 function buttonStop(){
     buttonActive = true;
+    document.getElementById('START').removeAttribute('disabled', 'disabled');
     clearInterval(calculateInterval);
     count = 0, countSec = 0 , countMin = 0, countHour = 0;
     resettingValues();
@@ -41,6 +47,7 @@ function buttonStop(){
 
 function buttonPause() {
     buttonActive = true;
+    document.getElementById('START').removeAttribute('disabled', 'disabled');
     clearInterval(calculateInterval);
 }
 
