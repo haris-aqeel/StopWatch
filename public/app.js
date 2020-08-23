@@ -2,6 +2,7 @@ var count = 0;
 var countSec = 0;
 var countMin = 0;
 var countHour = 0;
+var buttonActive = true;
 var calculateInterval;
 var seconds = document.getElementById('second');
 var minutes = document.getElementById('minute');
@@ -9,6 +10,7 @@ var hours = document.getElementById('hour');
 
 function buttonStart() {
     
+    buttonActive = false;
     calculateInterval = setInterval(function(){
         count++;
         countSec++;
@@ -30,6 +32,7 @@ function buttonStart() {
 }
 
 function buttonStop(){
+    buttonActive = true;
     clearInterval(calculateInterval);
     count = 0, countSec = 0 , countMin = 0, countHour = 0;
     resettingValues();
@@ -37,6 +40,7 @@ function buttonStop(){
 }
 
 function buttonPause() {
+    buttonActive = true;
     clearInterval(calculateInterval);
 }
 
